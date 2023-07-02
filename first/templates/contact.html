@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{%block title%}Contact{%endblock title%}
+{%block body%}
+<div class="container">
+  <center><img src="https://naruto-official.com/common/ogp/NTOS_OG-main.png" width="1000" height="600"></center>
+</div>
+<div class="container my-4">
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Select issue from below</option>
+    <option value="1">Didnt recieve order</option>
+    <option value="2">Product is wrong</option>
+    <option value="3">Product is Damaged</option>
+    <option value="4">Problem not listed</option>
+  </select>
+  <div class="mb-6">
+    <label for="exampleFormControlInput1" class="form-label"></label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label" ></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please explain the issue"></textarea>
+  </div>
+  <button type="button" class="btn btn-danger">Submit</button>
+</div>
+{% endblock body%}
